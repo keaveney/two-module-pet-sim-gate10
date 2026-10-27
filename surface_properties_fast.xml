@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<surfaces>
+<surface model="unified"
+         name="ESR_fast_reflector"
+         type="dielectric_metal"
+         sigmaalpha="0.15"
+         finish="ground">
+
+  <propertiestable>
+
+    <propertyvector name="REFLECTIVITY" energyunit="eV">
+      <ve energy="1.84" value="0.98"/>
+      <ve energy="4.08" value="0.98"/>
+    </propertyvector>
+
+    <propertyvector name="TRANSMITTANCE" energyunit="eV">
+      <ve energy="1.84" value="0.0"/>
+      <ve energy="4.08" value="0.0"/>
+    </propertyvector>
+
+    <propertyvector name="SPECULARLOBECONSTANT" energyunit="eV">
+      <ve energy="1.84" value="1.0"/>
+      <ve energy="4.08" value="1.0"/>
+    </propertyvector>
+
+    <propertyvector name="SPECULARSPIKECONSTANT" energyunit="eV">
+      <ve energy="1.84" value="0.0"/>
+      <ve energy="4.08" value="0.0"/>
+    </propertyvector>
+
+    <propertyvector name="BACKSCATTERCONSTANT" energyunit="eV">
+      <ve energy="1.84" value="0.0"/>
+      <ve energy="4.08" value="0.0"/>
+    </propertyvector>
+
+    <propertyvector name="EFFICIENCY" energyunit="eV">
+      <ve energy="1.84" value="0.0"/>
+      <ve energy="4.08" value="0.0"/>
+    </propertyvector>
+
+  </propertiestable>
+</surface>
+
+<surface model="unified" name="Detector_fast" type="dielectric_dielectric" sigmaalpha="0.01" finish="polished">
+    <propertiestable>
+      <propertyvector name="RINDEX" energyunit="eV">
+        <ve energy="1.84" value="1.0"/>
+        <ve energy="4.08" value="1.0"/>
+      </propertyvector>
+      <propertyvector name="REFLECTIVITY" energyunit="eV">
+        <ve energy="1.84" value="0.0"/>
+        <ve energy="4.08" value="0.0"/>
+      </propertyvector>
+      <propertyvector name="EFFICIENCY" energyunit="eV">
+        <ve energy="1.84" value="0.9"/>
+        <ve energy="4.08" value="0.9"/>
+      </propertyvector>
+    </propertiestable>
+  </surface>
+
+<surface model="unified" name="Diffuse_front" type="dielectric_dielectric" sigmaalpha="0.001" finish="polished">
+  </surface>
+
+</surfaces>

@@ -1,0 +1,16 @@
+__pycache__/
+.ipynb_checkpoints/
+visual-test/
+local-test/
+length-*/
+student-*.out
+student-*.err
+
+# Generated simulation/analysis data and local environments
+*.root
+events*.csv
+run_config.json
+stats.json
+*.log
+.venv/
+.DS_Store
